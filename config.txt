@@ -1,0 +1,4 @@
+meetingEditLimit=1
+tradeLimit=3
+incompleteLimit=4
+overBorrowLimit=2
