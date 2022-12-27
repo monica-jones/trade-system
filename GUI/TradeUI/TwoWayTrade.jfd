@@ -1,0 +1,111 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "TwoWayTrade"
+	"i18n.keyPrefix": "TwoWayTrade"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :0:610:x, comp back:::p:121:p, space :p:16:p}, seq t {space ::51:x, par l {seq t {par l {comp scrollPane2:::p:646:p, seq {par l {comp requestedItemTF::l:p:287:p, comp viewOffer::l:p:314:p, comp label4::l:p:222:p, comp allInvB::l:p:314:p}, space :p:37:p, par l {comp offerItemTF:::p:294:p, comp checkBox1::l:p:140:p, comp requestTrades::l:p:289:p, comp label3::l:p:227:p}}}, space :p:50:p}, seq t {comp label1:::p:118:p, space :::p}}}}"
+			"$verticalGroup": "par l {seq {space :::p, comp label1:::p::p, space :p:30:p, par b {comp label4::b:p:26:p, comp label3::b:p::p}, space s:::p, par b {comp requestedItemTF::b:p::p, comp offerItemTF::b:p::p}, space s:::p, par b {comp viewOffer::b:p:34:p, comp checkBox1::b:p::p}, space :p:34:p, par b {comp requestTrades::b:p:37:p, comp allInvB::b:p:34:p}, space s:::p, comp scrollPane2::::275:x, space s:::p, comp back:::p:33:p, space :p:14:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TwoWayTrade.label1.text_2" )
+				"foreground": new java.awt.Color( 153, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "requestedItemTF"
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, sfield java.awt.Color white )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewOffer"
+				"text": new FormMessage( null, "TwoWayTrade.viewOffer.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewOfferActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TwoWayTrade.label3.text_2" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "offerItemTF"
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, sfield java.awt.Color white )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "requestTrades"
+				"text": new FormMessage( null, "TwoWayTrade.requestTrades.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"opaque": true
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradesActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "TwoWayTrade.back.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"opaque": true
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": new FormMessage( null, "TwoWayTrade.checkBox1.text_2" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"opaque": true
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list2"
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Verdana", 0, 14 )
+					"background": sfield java.awt.Color darkGray
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "allInvB"
+				"text": new FormMessage( null, "TwoWayTrade.allInvB.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"opaque": true
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "allInvBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TwoWayTrade.label4.text_2" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

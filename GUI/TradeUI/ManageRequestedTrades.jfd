@@ -1,0 +1,89 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "ManageRequestedTrades"
+	"i18n.keyPrefix": "ManageRequestedTrades"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::x, par t {comp label2:::p::p, comp back:::p:115:p}, space :p:15:p}, seq l {space :p:61:p, par l {comp tradeIdTF:::p:325:p, seq l {comp accept:::p:310:p, space :p:31:p, comp decline:::p:282:p}, comp scrollPane1::t:p:623:p, comp display::t:p:623:p, comp label1::l:p:151:p}, space ::63:x}}"
+			"$verticalGroup": "par l {seq l {space :p:14:p, comp label2:::p::p, space :p:29:p, comp label1:::p::p, space :p:32:p, comp tradeIdTF:::p::p, space :p:36:p, par b {comp accept::b:p:39:p, comp decline::b:p:40:p}, space s:::p, comp scrollPane1:::p:245:p, space s:::p, comp display:::p:41:p, space s:::p, comp back:::p:30:p, space ::16:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tradeIdTF"
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+					"background": sfield java.awt.Color darkGray
+					"font": new java.awt.Font( "Verdana", 0, 14 )
+					"foreground": sfield java.awt.Color white
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "ManageRequestedTrades.label1.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accept"
+				"text": new FormMessage( null, "ManageRequestedTrades.accept.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "acceptActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "decline"
+				"text": new FormMessage( null, "ManageRequestedTrades.decline.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "declineActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "display"
+				"text": new FormMessage( null, "ManageRequestedTrades.display.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "ManageRequestedTrades.back.text" )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "ManageRequestedTrades.label2.text" )
+				"foreground": new java.awt.Color( 0, 204, 204, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

@@ -1,0 +1,155 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "AdminMainMenu"
+	"i18n.keyPrefix": "AdminMainMenu"
+	"i18n.autoExternalize": true
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq {par l {seq l {space :p:46:p, comp scrollPane1:::p:224:p, space ::226:x, par l {comp label5::t:p::p, comp label6::t:p::p}}, seq t {space :85:477:x, par l {comp label7::t:p::p, comp label4::t:p::p}}}, space u:::p, par l {comp meetingB::::106:x, comp overBorrowB::l::106:x, comp tradeB::::106:x, comp incompleteB::l::106:x}}, seq t {space ::46:x, comp viewLimitsButton:::p:224:p, space ::146:x, par l {comp resetLimitB:::p:269:p, comp button1:::::x}}}, space :p:65:p}, seq t {space :0:218:x, par l {seq t {comp label2:::p:114:p, space :::p}, seq t {par t {comp label1:::p::p, comp manageUser::t:p:298:p, comp undo::t:p:298:p}, space :p:234:p}}}, seq l {space :p:37:p, par l {comp label3:::p::p, comp textField1:::p:268:p}, space :0:429:x}, seq l {space :p:43:p, comp button6:::p:262:p, space ::280:x, comp logout:::p:143:p, space :p:22:p}}"
+			"$verticalGroup": "par l {seq l {space :p:30:p, par t {comp label2:::p::p, seq {comp label1:::p::p, space s:::p, comp undo:::p:33:p, space u:::p, comp manageUser:::p:35:p}}, space :p:50:p, par l {seq {par b {comp label4::b:p::p, comp meetingB::b:p:24:p}, space :::p, par b {comp label5::b:p::p, comp overBorrowB::b:p:24:p}, space :p:8:p, par b {comp label6::b:p::p, comp tradeB::b:p:24:p}, space :p:8:p, par b {comp label7::b:p::p, comp incompleteB::b:p:24:p}}, seq {space :p:8:p, comp scrollPane1:::p:121:p}}, space s:::p, par l:::p {comp viewLimitsButton:::p:35:p, seq {space :4:4:p, comp resetLimitB::::37:x}}, space u:::p, comp button1:::p:40:p, par l {seq {space s:::p, comp label3:::p::p, space :::p, comp textField1:::p::p, space :::p, comp button6:::p:33:p, space ::44:x}, seq t {space ::104:x, comp logout:::p:33:p, space :p:14:p}}}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 0, 102, 102, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AdminMainMenu.label1.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 30 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "manageUser"
+				"text": new FormMessage( null, "AdminMainMenu.manageUser.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "manageUserActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "resetLimitB"
+				"text": new FormMessage( null, "AdminMainMenu.resetLimitB.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetLimitBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": new FormMessage( null, "AdminMainMenu.button6.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "createNewAdminBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "undo"
+				"text": new FormMessage( null, "AdminMainMenu.undo.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "undoActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logout"
+				"text": new FormMessage( null, "AdminMainMenu.logout.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "AdminMainMenu.label3.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 16 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "AdminMainMenu.label4.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 12 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "AdminMainMenu.label5.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 12 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "AdminMainMenu.label6.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 12 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "AdminMainMenu.label7.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 12 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "meetingB"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "overBorrowB"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tradeB"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "incompleteB"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 12 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "viewLimits"
+					"background": sfield java.awt.Color darkGray
+					"foreground": sfield java.awt.Color white
+					"font": new java.awt.Font( "Verdana", 0, 14 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewLimitsButton"
+				"text": new FormMessage( null, "AdminMainMenu.viewLimitsButton.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayLimitsActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "AdminMainMenu.button1.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"background": sfield java.awt.Color darkGray
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetWeeklyTradeCountActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

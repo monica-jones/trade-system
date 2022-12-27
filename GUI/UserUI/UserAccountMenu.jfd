@@ -1,0 +1,109 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "UserAccountMenu"
+	"i18n.keyPrefix": "UserAccountMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::x, par l {seq t {comp label1:::p::p, space :::p}, seq t {comp back:::p:103:p, space :p:15:p}, seq t {par l {comp label2:::p:537:p, par t {comp scrollPane1:::p:654:p, seq {comp topTradesB:::p:283:p, space :p:77:p, comp frequentTraders:::p:294:p}}}, space :p:46:p}}}, seq t {space :p:42:p, par t {seq l {comp label3:::p:291:p, space :0:161:x}, comp button1::l::452:x, comp userInventory::l::452:x, comp wishlist::l:::x}, space :p:253:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:8:p, comp label3:::p::p, space :p:18:p, comp wishlist:::p:34:p, space u:::p, comp userInventory:::p:39:p, space u:::p, comp button1:::p:37:p, space ::24:x, comp label2:::p::p, space s:::p, comp scrollPane1:::p:198:p, space s:::p, par b {comp topTradesB::b:p:39:p, comp frequentTraders::b:p:39:p}, space :p:33:p, comp back:::p:31:p, space :p:15:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "UserAccountMenu.label1.text" )
+				"foreground": new java.awt.Color( 153, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "wishlist"
+				"text": new FormMessage( null, "UserAccountMenu.wishlist.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "wishlistActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "userInventory"
+				"text": new FormMessage( null, "UserAccountMenu.userInventory.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userInventoryActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "frequentTraders"
+				"text": new FormMessage( null, "UserAccountMenu.frequentTraders.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "frequentTradersActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "topTradesB"
+				"text": new FormMessage( null, "UserAccountMenu.topTradesB.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "topTradesBActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+					"font": new java.awt.Font( "Verdana", 0, 14 )
+					"foreground": sfield java.awt.Color white
+					"background": sfield java.awt.Color darkGray
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "UserAccountMenu.back.text" )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "UserAccountMenu.label2.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "UserAccountMenu.label3.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "UserAccountMenu.button1.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestUnfreezeActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

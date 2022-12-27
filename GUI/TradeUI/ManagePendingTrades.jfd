@@ -1,0 +1,141 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "ManagePendingTrades"
+	"i18n.keyPrefix": "ManagePendingTrades"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:42:p, par l {seq {par l {comp label2::l:::x, seq {par l {seq {par l {comp label5:::p:117:p, comp label4:::p:161:p}, space :::p, par l:::p {comp label6:::p:161:p, comp time::l::184:x, comp location::::184:x}}, comp meetingLabel:::p:278:p, par t:l::p {comp displayInfo::l::318:x, comp accept::l::318:x}}, space :0:0:x}}, space :p:28:p}, seq {par l {comp tradeId:::p:287:p, comp suggest::l:p:360:p}, space ::19:x}}, par l {comp display:::p:298:p, comp scrollPane1:::p:295:p}, space :p:31:p}, seq t {space :0:564:x, comp label1:::p:180:p, space :::p}, seq t {space ::617:x, comp back:::p:113:p, space :p:20:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:9:p, comp label2:::p::p, par l {seq l {space :p:29:p, comp scrollPane1:::p:389:p, space ::30:x, comp display:::p:30:p, space s:::p, comp back:::p:28:p, space :p:24:p}, seq l {space s:::p, comp tradeId:::p::p, space :p:29:p, comp displayInfo:::p:33:p, space s:::p, comp meetingLabel:::p::p, space :p:64:p, comp accept:::p:35:p, space :p:39:p, comp label6:::p::p, space s:::p, par b {comp label4::b:p::p, comp time::b:p::p}, space s:::p, par b {comp label5::b:p::p, comp location::b:p::p}, space :p:37:p, comp suggest:::p:30:p, space ::113:x}}}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			"preferredSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "ManagePendingTrades.label1.text" )
+				"foreground": new java.awt.Color( 153, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+					"font": new java.awt.Font( "Verdana", 0, 14 )
+					"foreground": sfield java.awt.Color white
+					"background": sfield java.awt.Color darkGray
+					"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "display"
+				"text": new FormMessage( null, "ManagePendingTrades.display.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tradeId"
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "ManagePendingTrades.label2.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "meetingLabel"
+				"text": new FormMessage( null, "ManagePendingTrades.meetingLabel.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accept"
+				"text": new FormMessage( null, "ManagePendingTrades.accept.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"foreground": sfield java.awt.Color white
+				"opaque": true
+				"multiClickThreshhold": 1l
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "acceptActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "acceptActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "ManagePendingTrades.label4.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayInfo"
+				"text": new FormMessage( null, "ManagePendingTrades.displayInfo.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"foreground": sfield java.awt.Color white
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayInfoActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "location"
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "ManagePendingTrades.label5.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "suggest"
+				"text": new FormMessage( null, "ManagePendingTrades.suggest.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"foreground": sfield java.awt.Color white
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "suggestActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "ManagePendingTrades.back.text" )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "ManagePendingTrades.label6.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "time"
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+				"foreground": sfield java.awt.Color white
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

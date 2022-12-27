@@ -1,0 +1,146 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "TradeMainMenu"
+	"i18n.keyPrefix": "TradeMainMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:42:p, par l {seq {comp label4:::p:279:p, space ::64:x, comp separator1:::p::p, par l {seq {space s:::p, comp label6:::p::p}, seq l {space :p:12:p, comp label3:::p:218:p}}, space :p:133:p}, seq {par l {par t {comp reqThreeWayB:::p:305:p, comp reqTwoWayB::t:p:305:p, comp reqOneWayB::t:p:305:p}, comp label2:::p:221:p}, space ::51:x, par l {comp requested:::p:300:p, comp pending:::p:300:p, seq {space :8:8:p, par l {comp label5::l:p:246:p, comp label7::l:p::p}}, comp open:::p:301:p}, space :p:49:p}}}, seq l {space :p:276:p, par l {comp label8:::p:196:p, comp label1:::p::p}, space ::181:x}, seq t {space ::612:x, comp back:::p:119:p, space :p:17:p}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp label1:::p:30:p, space :::p, comp label8:::p::p, space :p:57:p, par b {comp label4::b:p::p, comp label3::b:p::p}, par l {seq t {space ::42:x, par b {comp label5::b:p::p, comp label2::b:p::p}, space :::p, par b {comp requested::b:p:60:p, comp reqOneWayB::b:p:60:p}, space :p:24:p, comp label6:::p::p, space :::p, par b {comp reqTwoWayB::b:p:56:p, comp pending::b:p:58:p}, space :p:30:p, comp label7:::p::p, space :::p}, seq l {space :::x, comp separator1:::p::p, space :0:0:x}}, par l:::p {comp reqThreeWayB::::55:x, comp open::::55:x}, space :p:76:p, comp back:::p:28:p, space :p:19:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TradeMainMenu.label1.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "requested"
+				"text": new FormMessage( null, "TradeMainMenu.requested.text" )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), null )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestedActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "pending"
+				"text": new FormMessage( null, "TradeMainMenu.pending.text" )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), null )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pendingActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "TradeMainMenu.back.text" )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"foreground": sfield java.awt.Color white
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqTwoWayB"
+				"text": new FormMessage( null, "TradeMainMenu.reqTwoWayB.text" )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), null )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradesActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqTwoWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "TradeMainMenu.label2.text" )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqOneWayB"
+				"text": new FormMessage( null, "TradeMainMenu.reqOneWayB.text" )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"displayedMnemonicIndex": new FormMessage( null, "TradeMainMenu.reqOneWayB.displayedMnemonicIndex" )
+				"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 255, 255, 255 ), new java.awt.Color( 0, 204, 204, 255 ), null )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqOneWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqThreeWayB"
+				"text": new FormMessage( null, "TradeMainMenu.reqThreeWayB.text" )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), null )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqThreeWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "open"
+				"text": new FormMessage( null, "TradeMainMenu.open.text" )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.BevelBorder( 0, new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), new java.awt.Color( 0, 204, 204, 255 ), null )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TradeMainMenu.label4.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TradeMainMenu.label3.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "TradeMainMenu.label5.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "TradeMainMenu.label6.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "TradeMainMenu.label7.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "TradeMainMenu.label8.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 50 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

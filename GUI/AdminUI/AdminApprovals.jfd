@@ -1,0 +1,123 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "AdminApprovals"
+	"i18n.keyPrefix": "AdminApprovals"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::161:x, comp label1:::p:436:p, space :p:153:p}, seq {par l {seq l {space :p:49:p, par l:::p {comp denyB::t:::x, comp unfreezeB::t:::x, comp approveB::l:::x, seq {comp label3:::p:134:p, space :::p, comp itemIdTF:::p:80:p}, comp freezeB::l:::x, seq l {comp label2:::p:137:p, space :::p, comp userIdTF:::p:83:p}}, space :p:29:p, par l {comp scrollPane1:::p:368:p, par t:l::p {comp unfreezeListB::l::368:x, comp displayFrozenUsersB::l::368:x, comp displayFlaggedUsers::l::368:x, comp displayItemsB::l::368:x}}}, seq {space :p:28:p, comp back:::p:96:p}}, space ::78:x}}"
+			"$verticalGroup": "par l {seq l {space :p:25:p, comp label1:::p::p, par l {seq {space :p:33:p, par b {comp label2::b:p::p, comp userIdTF::b:p::p}, space s:::p, comp freezeB:::p::p, space :::p, comp unfreezeB:::p::p, space :p:52:p, par l {comp label3::t:p::p, comp itemIdTF::t:p::p}, space s:::p, comp approveB:::p::p, space u:::p, comp denyB:::p::p}, seq l {space s:::p, comp scrollPane1:::p:285:p}}, space :p:18:p, comp displayItemsB:::p:37:p, space :::p, comp displayFlaggedUsers:::p:32:p, space :::p, comp displayFrozenUsersB::::37:x, space :::p, comp unfreezeListB:::p:33:p, space :p:13:p, comp back:::p::p, space :p:21:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 0, 102, 102, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AdminApprovals.label1.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 26 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+					"background": sfield java.awt.Color darkGray
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 17 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayItemsB"
+				"text": new FormMessage( null, "AdminApprovals.displayItemsB.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayItemsBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayFlaggedUsers"
+				"text": new FormMessage( null, "AdminApprovals.displayFlaggedUsers.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayFlaggedUsersActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayFrozenUsersB"
+				"text": new FormMessage( null, "AdminApprovals.displayFrozenUsersB.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayFrozenUsersBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AdminApprovals.label2.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "freezeB"
+				"text": new FormMessage( null, "AdminApprovals.freezeB.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "freezeBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userIdTF"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "unfreezeB"
+				"text": new FormMessage( null, "AdminApprovals.unfreezeB.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "unfreezeBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "AdminApprovals.label3.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemIdTF"
+				"background": sfield java.awt.Color darkGray
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "approveB"
+				"text": new FormMessage( null, "AdminApprovals.approveB.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "approveBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "denyB"
+				"text": new FormMessage( null, "AdminApprovals.denyB.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 15 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "denyBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "AdminApprovals.back.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 20 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "unfreezeListB"
+				"text": new FormMessage( null, "AdminApprovals.unfreezeListB.text" )
+				"background": sfield java.awt.Color darkGray
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 0, 15 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "unfreezeListBActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

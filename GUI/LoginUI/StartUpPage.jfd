@@ -1,0 +1,75 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "StartUpPage"
+	"i18n.keyPrefix": "StartUpPage"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:614:p, comp label2:::p:417:p}, seq l {space :p:244:p, comp exit:::p:245:p}}, space :0:0:x}, seq {par l {seq {space :p:173:p, par l:::p {comp label5::l:p::p, comp signUp::l::396:x, comp login::l::396:x, comp label3::l:p::p}}, seq l {space :p:81:p, comp label1:::p:582:p}}, space ::87:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:118:p, space :p:72:p, comp label3:::p::p, space s:::p, comp label2:::p::p, space :p:4:p, comp login:::p:37:p, space :p:77:p, comp label5:::p:18:p, space s:::p, comp signUp:::p:37:p, space ::127:x, comp exit:::p::p, space :p:30:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"preferredSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "StartUpPage.label1.text" )
+				"font": new java.awt.Font( "Arial", 1, 30 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": new javax.swing.border.TitledBorder( new javax.swing.border.MatteBorder( 3, 4, 3, 4, new java.awt.Color( 0, 153, 153, 255 ) ), "i18nKey=StartUpPage.label1.border", 1, 0, null, new java.awt.Color( 204, 255, 255, 255 ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "login"
+				"text": new FormMessage( null, "StartUpPage.login.text" )
+				"font": new java.awt.Font( "Verdana", 1, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "signUp"
+				"text": new FormMessage( null, "StartUpPage.signUp.text" )
+				"font": new java.awt.Font( "Verdana", 1, 17 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signUpActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exit"
+				"text": new FormMessage( null, "StartUpPage.exit.text" )
+				"font": new java.awt.Font( "Arial", 0, 15 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "StartUpPage.label5.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": new java.awt.Color( 204, 255, 255, 255 )
+				"background": new java.awt.Color( 204, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "StartUpPage.label3.text" )
+				"foreground": new java.awt.Color( 204, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 30 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

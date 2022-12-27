@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "ThreeWayTrade"
+	"i18n.keyPrefix": "ThreeWayTrade"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:251:p, comp itemID:::p:159:p}, seq l {space :p:83:p, par l {comp label5:::p:366:p, seq {comp label2:::p:162:p, space :::p, comp label1:::p:213:p}}}}, space :::x}, seq l {space :p:53:p, par l {seq l {par t {comp requestButton:::::x, comp scrollPane1:::p:280:p}, space :p:141:p}, seq {par l {comp label4:::p:202:p, comp searchButton::l:p:225:p, comp permanentBox::l:p:235:p}, space :::x}}, par l:::p {comp scrollPane2:::p:207:p, comp viewItemsButton:::::x}, space :p:69:p}, seq t {space :::x, comp backButton:::p:214:p, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:41:p, comp label5:::p::p, space u:::p, par b {comp label2::b:p::p, comp itemID::b:p::p}, space :p:35:p, par l {seq {comp searchButton:::p::p, space :::p, comp label4:::p::p, space s:::p, comp scrollPane1::::146:x, space u:::p, comp permanentBox:::p::p}, comp scrollPane2::::249:x}, space u:::p, par b {comp viewItemsButton::b:p::p, comp requestButton::b:p::p}, space :p:108:p, comp backButton:::p::p, space :p:15:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "ThreeWayTrade.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemID"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "ThreeWayTrade.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "requestButton"
+				"text": new FormMessage( null, "ThreeWayTrade.requestButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradeActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradeActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradeActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searchButton"
+				"text": new FormMessage( null, "ThreeWayTrade.searchButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButtonActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": new FormMessage( null, "ThreeWayTrade.backButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "permanentBox"
+				"text": new FormMessage( null, "ThreeWayTrade.permanentBox.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "permanentBoxActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradeActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "ThreeWayTrade.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "ThreeWayTrade.label5.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "displaySuggestion"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "availableItems"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewItemsButton"
+				"text": new FormMessage( null, "ThreeWayTrade.viewItemsButton.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewItemsActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewItemsButtonActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewItemsActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewItemsActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

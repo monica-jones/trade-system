@@ -1,0 +1,126 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "AdminUndo"
+	"i18n.keyPrefix": "AdminUndo"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+<<<<<<< HEAD
+			"$horizontalGroup": "par l {seq {space ::40:x, par l {seq t {comp back:::p:182:p, space :p:34:p}, seq t {par l {comp label3:::p:112:p, comp label4:::p:79:p, comp label2::l:p:92:p}, par t {seq t {space :::x, par t:::p {comp button2::::336:x, comp button1:::::x}, space :p:223:p}, seq t {par l {seq {space ::8:x, par l:::p {comp itemId::::112:x, comp tradeId::::112:x}, space ::83:x}, seq l {space :::p, comp userId:::p:112:p, space ::87:x}}, par l:::p {comp button5::t:p:336:p, comp button3::t:::x, comp button4::t:::x}, space :p:59:p}}}}}, seq t {space ::236:x, comp label1:::p:380:p, space :p:134:p}}"
+			"$verticalGroup": "par l {seq l {space :p:77:p, comp label1:::p::p, space :p:38:p, par t {seq {comp button1:::p:40:p, space :p:12:p, comp button2:::p:41:p, space s:::p, par b {comp button3::b:p:40:p, comp tradeId::b:p::p, comp label4::b:p::p}, space :p:18:p, par b {comp itemId::b:p::p, comp label3::b:p::p, comp button4::b:p:38:p}, space u:::p, comp button5:::p:40:p}, par b {comp userId::b:p::p, comp label2::b:p::p}}, space ::129:x, comp back:::p::p, space :p:29:p}}"
+=======
+			"$horizontalGroup": "par l {seq {space ::39:x, par l {seq t {comp back:::p:182:p, space :p:34:p}, seq t {par l {comp label3:::p:112:p, comp label4:::p:79:p, comp label2::l:p:92:p}, par t {seq t {par l {seq {space ::9:x, par l:::p {comp itemId::::112:x, comp tradeId::::112:x}, space ::84:x}, seq l {space :::p, comp userId:::p:112:p, space ::87:x}}, par l:::p {comp button5::t:p:336:p, comp button3::t:::x, comp button4::t:::x}, space :p:59:p}, seq t {space :::x, par l {comp label1:::p:380:p, par t:::p {comp button2::::336:x, comp button1:::::x}}, space :p:179:p}}}}}}"
+			"$verticalGroup": "par l {seq l {space :p:67:p, comp label1:::p::p, space :p:48:p, par t {seq {comp button1:::p:40:p, space :p:12:p, comp button2:::p:41:p, space s:::p, par b {comp button3::b:p:40:p, comp tradeId::b:p::p, comp label4::b:p::p}, space :p:18:p, par b {comp itemId::b:p::p, comp label3::b:p::p, comp button4::b:p:38:p}, space u:::p, comp button5:::p:40:p}, par b {comp userId::b:p::p, comp label2::b:p::p}}, space ::127:x, comp back:::p::p, space :p:29:p}}"
+>>>>>>> 0fde143ce65df439deb47e869e0bcb93c4846f7e
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 0, 102, 102, 255 )
+			"font": new java.awt.Font( "Verdana", 1, 18 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AdminUndo.label1.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 35 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "AdminUndo.button1.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "undoLastTradeActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "AdminUndo.button2.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "undoRecentTradesActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "AdminUndo.button3.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "undoSpecifiedTradeActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": new FormMessage( null, "AdminUndo.button4.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteItemFromInventoryActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": new FormMessage( null, "AdminUndo.button5.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteItemFromWishlistActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "AdminUndo.back.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 20 )
+				"background": sfield java.awt.Color darkGray
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemId"
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "AdminUndo.label3.text" )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tradeId"
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "AdminUndo.label4.text" )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userId"
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AdminUndo.label2.text" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

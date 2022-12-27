@@ -1,0 +1,108 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "LoginPage"
+	"i18n.keyPrefix": "LoginPage"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:146:p, par l {comp label3::::413:x, comp password::l:::x, comp username::l::413:x, seq l {par l {comp label2:::p::p, comp label1::l:p::p}, space :320:328:x}}, space ::191:x}, seq t {space :0:611:x, comp back:::p:120:p, space :p:19:p}, seq {par l {seq l {space :p:221:p, par l {comp adminLoginB:::p:294:p, comp userLogin:::p:294:p}}, seq l {space :p:211:p, comp label4:::p::p}}, space ::222:x}, seq t {space ::267:x, comp guest:::p:218:p, space :p:265:p}}"
+			"$verticalGroup": "par l {seq l {space :p:38:p, comp label3:::p:84:p, space :::x, comp label1:::p:31:p, space u:::p, comp username:::p::p, space :p:24:p, comp label2:::p::p, space s:::p, comp password:::p::p, space :p:31:p, comp userLogin:::p:39:p, space :p:31:p, comp adminLoginB:::p:36:p, space :p:18:p, comp label4:::p::p, space s:::p, comp guest:::p:33:p, space :p:12:p, comp back:::p::p, space :p:16:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"requestFocusEnabled": false
+			"preferredSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "username"
+				"border": &MatteBorder0 new javax.swing.border.MatteBorder( 0, 0, 3, 0, sfield java.awt.Color white )
+				"opaque": true
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"font": new java.awt.Font( "Menlo", 0, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "LoginPage.label2.text" )
+				"font": new java.awt.Font( "Verdana", 0, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "userLogin"
+				"text": new FormMessage( null, "LoginPage.userLogin.text" )
+				"font": new java.awt.Font( "Verdana", 1, 16 )
+				"foreground": sfield java.awt.Color white
+				"iconTextGap": 18
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 2, 1, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "LoginPage.label3.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 28 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.TitledBorder( new javax.swing.border.MatteBorder( 3, 3, 3, 3, new java.awt.Color( 0, 204, 204, 255 ) ), "i18nKey=LoginPage.label3.border", 4, 0, new java.awt.Font( "Tw Cen MT Condensed", 0, 12 ), new java.awt.Color( 204, 204, 204, 255 ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "LoginPage.label1.text" )
+				"font": new java.awt.Font( "Verdana", 0, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 102, 102, 102, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "LoginPage.label4.text" )
+				"font": new java.awt.Font( "Roboto Light", 0, 16 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "password"
+				"border": #MatteBorder0
+				"opaque": true
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Lucida Grande", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "adminLoginB"
+				"text": new FormMessage( null, "LoginPage.adminLoginB.text" )
+				"border": new javax.swing.border.MatteBorder( 2, 2, 2, 2, new java.awt.Color( 0, 204, 204, 255 ) )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"font": new java.awt.Font( "Verdana", 1, 16 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "adminLoginBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "guest"
+				"text": new FormMessage( null, "LoginPage.guest.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 2, 2, 2, 2, new java.awt.Color( 0, 204, 204, 255 ) )
+				"font": new java.awt.Font( "Verdana", 1, 14 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "guestActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "LoginPage.back.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				"opaque": true
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 750, 575 )
+		} )
+	}
+}
